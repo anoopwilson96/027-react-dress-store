@@ -13,7 +13,7 @@ export default function Header() {
           <h3 className=' font-bold '>DressStore</h3>
         </div>
         <div>
-          <input type="text" placeholder='search' className=' p-1 bg-orange-200  border  border-sky-500 rounded hover:border-dotted w-100 bg-transparent  ' />
+          <input type="text" placeholder='search' className=' p-1 bg-zinc-50  border  border-red-600 rounded hover:border-dotted w-100 bg-transparent  ' />
         
         </div>
 

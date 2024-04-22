@@ -8,6 +8,7 @@ import './index.css'
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Home from './routes/home';
+import Product from './routes/product';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "products/:productId",
+        element: <Product/>
       },
     ],
   },

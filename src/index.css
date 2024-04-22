@@ -4,6 +4,6 @@
 
 
 .mainBack{
-  background-image: url(../public/flag.jpg);
+  background-image: url(/flag.jpg);
   object-fit: cover;
 }
