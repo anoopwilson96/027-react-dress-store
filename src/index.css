@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.mainBack{
+  background-image: url(../public/flag.jpg);
+  object-fit: cover;
+}

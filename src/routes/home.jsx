@@ -1,11 +1,12 @@
 import React from 'react'
+import MainOne from './components/mainOne'
+import HomeProducts from './components/homeProducts'
 
 export default function Home() {
   return (
     <>
-    <div className='text-lg'>
-      <h1>Home: main contents will be here </h1>
-    </div>
+    <MainOne/>
+    <HomeProducts/>               
     
     </>
 
