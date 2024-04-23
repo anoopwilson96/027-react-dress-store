@@ -23,7 +23,7 @@ const router = createBrowserRouter([
          loader: productsLoader 
       },
       {
-        path: "/products",
+        path: "/home/products",  //tried just '/products' //still not working
         path: "/",
          element: <HomeProducts/>,
          loader: productsLoader 
