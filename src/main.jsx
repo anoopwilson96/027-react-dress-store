@@ -7,9 +7,9 @@ import {
 import './index.css'
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import Home from './routes/home';
 import Product from './routes/product';
 import HomeProducts, { loader as productsLoader } from './routes/components/homeProducts';
+import Home from './routes/home';
 
 const router = createBrowserRouter([
   {
@@ -19,10 +19,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+         element: <Home/>,
+         loader: productsLoader 
       },
       {
-        path: "products/",
+        path: "/products",
+        path: "/",
          element: <HomeProducts/>,
          loader: productsLoader 
       },
