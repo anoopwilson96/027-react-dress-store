@@ -1,17 +1,30 @@
 import React from 'react'
+import { useLoaderData } from 'react-router-dom';
+
+export async function loader({params}){
+  const response= await fetch('https://fakestoreapi.com/products/'+ params.productId)
+  const product = await response.json() 
+  return{product}
+}
 
 export default function Product() {
+  const {product} = useLoaderData()
+  console.log(product)
+
   return (
     <div>
-      <div className="homeProducts  grid grid-cols-3 gap-5 my-10">
-        <article className=' border shadow-lg rounded-md border-black max-w-52 p-5 ' >
+      <div className="homeProducts  my-10">
+
+
+
+        <article className=' border shadow-lg rounded-md border-black  p-5 m-5 ' >
           <div>
-            <img src="#" alt="" />
-            <h2>Product Title</h2>
+            <img src={product.image} alt="" />
+            <h2>{product.title}</h2>
           </div>
-          <h3>$499</h3>
+          <h3>$ {product.price}</h3>
           <div>
-            <h3>This is the product short details</h3>
+            <h3>{product.description}</h3>
           </div>
 
 

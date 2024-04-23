@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData, Link } from 'react-router-dom';
 
 
 export async function loader () {
@@ -21,11 +21,11 @@ export default function HomeProducts() {
       <div className="homeProducts  grid grid-cols-3 gap-5 m-5">
         {
           data.map(product=>(
-            <article key={product.id} className='border  shadow-lg rounded-md border-black max-w-52 p-5 ' >
+            <article key={product.id} className='border  shadow-lg rounded-md border-black p-5 ' >
             
             <div>
               <img src={product.image} alt="" />
-              <h2>{product.title}</h2>
+              <Link to={'/products/' + product.id} ><h2>{product.title}</h2> </Link>
             </div>
             <h3>$ {product.price}</h3>
             <div>
