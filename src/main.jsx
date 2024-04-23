@@ -9,6 +9,7 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Home from './routes/home';
 import Product from './routes/product';
+import HomeProducts from './routes/components/homeProducts';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "products/",
-        element: <Product/>
+         element: <HomeProducts/>
       },
       {
         path: "products/:productId",

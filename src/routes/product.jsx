@@ -3,8 +3,8 @@ import React from 'react'
 export default function Product() {
   return (
     <div>
-      <div className="homeProducts  grid grid-cols-3 gap-5 m-5">
-        <article className='border  shadow-lg rounded-md border-black max-w-52 p-5 ' >
+      <div className="homeProducts  grid grid-cols-3 gap-5 my-10">
+        <article className=' border shadow-lg rounded-md border-black max-w-52 p-5 ' >
           <div>
             <img src="#" alt="" />
             <h2>Product Title</h2>
@@ -16,6 +16,7 @@ export default function Product() {
 
 
         </article>
+        
       </div>
     </div>
   )
