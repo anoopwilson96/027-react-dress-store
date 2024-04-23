@@ -7,7 +7,7 @@ export default function Header() {
       <div className='header1  bg-orange-400'>
         <div  className="headerSection1 container mx-auto flex flex-1 flex-row justify-between align-middle p-4 gap-2">
         <div className="logoImage">
-          <img className='h-8 w-15' src="./public/logo.png" alt="Company Logo" />
+          <img className='h-8 w-15' src="/logo.png" alt="Company Logo" />
         </div>
         <div>
           <h3 className=' font-bold '>DressStore</h3>
