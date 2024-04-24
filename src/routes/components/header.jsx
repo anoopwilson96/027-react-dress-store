@@ -11,7 +11,7 @@ export default function Header() {
           <img className='h-8 w-15' src="/logo.png" alt="Company Logo" />
         </div>
         <div>
-          <Link to={'/home'}><h3 className=' font-bold '>DressStore</h3> </Link>
+          <Link to={'/home'}><h3 className=' font-bold '>MultiStore</h3> </Link>
           
         </div>
         <div>
