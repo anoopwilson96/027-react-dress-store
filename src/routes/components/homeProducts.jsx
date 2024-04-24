@@ -25,11 +25,15 @@ export default function HomeProducts() {
             
             <div>
               <img src={product.image} alt="" />
-              <Link to={'/products/' + product.id} ><h2>{product.title}</h2> </Link>
+              <Link to={'/products/' + product.id} ><h2 className='font-bold m-3' >{product.title}</h2> </Link>
             </div>
-            <h3>$ {product.price}</h3>
+            <h3 className='font-semibold m-2' >$ {product.price}</h3>
             <div>
-              <h3>{product.description}</h3>
+              <h3 className=' m-2' >{product.description}</h3>
+            </div>
+            <div className=' m-4 flex flex-row align-middle justify-between gap-3'>
+              <button className='bg-orange-300 p-2 rounded-md' >Add to Cart</button>
+              <button className='bg-orange-400 p-2 rounded-md' >Buy Now</button>
             </div>
   
   

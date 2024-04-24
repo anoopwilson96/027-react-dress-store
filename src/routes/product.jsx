@@ -13,19 +13,24 @@ export default function Product() {
 
   return (
     <div>
-      <div className="homeProducts  my-10">
+      <div className="homeProducts mx-0 flex flex-row align-middle justify-center ">
 
 
 
-        <article className=' border shadow-lg rounded-md border-black  p-5 m-5 ' >
+        <article className='max-w-96 flex flex-col justify-start align-middle  products border shadow-lg rounded-md border-black  p-5 m-5 ' >
           <div>
-            <img src={product.image} alt="" />
-            <h2>{product.title}</h2>
+            <img className='mx-5' src={product.image} alt="" />
+            <h2 className='font-bold m-2 text-lg' >{product.title}</h2>
           </div>
-          <h3>$ {product.price}</h3>
+          <h3 className='font-semibold m-2'>$ {product.price}</h3>
           <div>
             <h3>{product.description}</h3>
           </div>
+          <div className=' my-5 flex flex-row align-middle gap-3'>
+              <button className='bg-orange-300 p-2 rounded-md' >Add to Cart</button>
+              <button className='bg-orange-400 p-2 rounded-md' >Buy Now</button>
+            </div>
+  
 
 
         </article>

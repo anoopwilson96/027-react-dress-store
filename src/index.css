@@ -7,3 +7,16 @@
   background-image: url(/flag.jpg);
   object-fit: cover;
 }
+
+.homeProducts img{
+  width: 100%;
+  aspect-ratio: 3.5/4;
+  object-fit: contain;
+
+}
+.products img{
+  max-width: 300px;
+  aspect-ratio: 3.5/4;
+  object-fit: contain;
+
+}

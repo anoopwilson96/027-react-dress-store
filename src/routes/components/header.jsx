@@ -1,4 +1,5 @@
 import React from 'react';
+import {  Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -10,7 +11,8 @@ export default function Header() {
           <img className='h-8 w-15' src="/logo.png" alt="Company Logo" />
         </div>
         <div>
-          <h3 className=' font-bold '>DressStore</h3>
+          <Link to={'/home'}><h3 className=' font-bold '>DressStore</h3> </Link>
+          
         </div>
         <div>
           <input type="text" placeholder='search' className=' p-1 bg-zinc-50  border  border-red-600 rounded hover:border-dotted w-100 bg-transparent  ' />
