@@ -18,10 +18,10 @@ export default function HomeProducts() {
     <div>
 
       <div className='bg-zinc-400 flex flex-row align-middle justify-center p-4 '> <h1  className=''>Our popular products </h1></div>
-      <div className="homeProducts  grid grid-cols-3 gap-5 m-5 max-w-6xl mx-auto">
+      <div className="homeProducts grid sm:grid-cols-3  grid-cols-1  gap-5 m-5 max-w-6xl mx-auto">
         {
           data.map(product=>(
-            <article key={product.id} className=' border  shadow-lg rounded-md border-black p-5 ' >
+            <article key={product.id} className=' border  shadow-lg rounded-md border-black p-5 mx-4' >
             
             <div>
               <img src={product.image} alt="" />
