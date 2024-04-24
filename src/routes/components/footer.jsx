@@ -5,6 +5,7 @@ export default function Footer() {
     <>
 
     <div className=' bg-orange-400 p-4'>
+      <div className=' max-w-5xl mx-auto'>
       <div  className="headerSection1 footer1 container mx-auto flex flex-1 flex-row justify-between align-middle p-4 gap-2">
       <div className="">
         <nav>
@@ -39,6 +40,9 @@ export default function Footer() {
         </nav>
       </div>
       </div>
+
+      </div>
+
     </div>
 
   </>
