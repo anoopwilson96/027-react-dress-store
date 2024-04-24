@@ -31,7 +31,7 @@ export default function HomeProducts() {
             <div>
               <h3 className=' m-2' >{product.description}</h3>
             </div>
-            <div className=' m-4 flex flex-row align-middle justify-between gap-3'>
+            <div className=' m-4 flex flex-row align-middle  gap-5'>
               <button className='bg-orange-300 p-2 rounded-md' >Add to Cart</button>
               <button className='bg-orange-400 p-2 rounded-md' >Buy Now</button>
             </div>
